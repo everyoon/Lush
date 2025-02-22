@@ -3,8 +3,490 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.scss" />
     <link rel="stylesheet" href="./styles/style.scss" />
+    <script type="module" src="./js/main.js"></script>
     <title>Lush</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="logo">
+          <img src="./public/logo.png" alt="Lush 로고" />
+        </div>
+        <nav class="nav">
+          <ul>
+            <li class="nav_item"><a href="#" aria-label="product 페이지로 이동">Product</a></li>
+            <li class="nav_item"><a href="#" aria-label="lifestyle 페이지로 이동">LifeStyle</a></li>
+            <li class="nav_item"><a href="#" aria-label="gifts 페이지로 이동">Gifts</a></li>
+          </ul>
+        </nav>
+        <div class="bar">
+          <div class="search">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_26_7)">
+                  <path
+                    d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_26_7">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="user">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_26_11)">
+                  <path
+                    d="M15.5 11C16.3284 11 17 10.3284 17 9.5C17 8.67157 16.3284 8 15.5 8C14.6716 8 14 8.67157 14 9.5C14 10.3284 14.6716 11 15.5 11Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M8.5 11C9.32843 11 10 10.3284 10 9.5C10 8.67157 9.32843 8 8.5 8C7.67157 8 7 8.67157 7 9.5C7 10.3284 7.67157 11 8.5 11Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12 16C10.52 16 9.25 15.19 8.55 14H6.88C7.68 16.05 9.67 17.5 12 17.5C14.33 17.5 16.32 16.05 17.12 14H15.45C14.76 15.19 13.48 16 12 16ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_26_11">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="shopping-bag">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4_11)">
+                  <path
+                    d="M18 6H16C16 3.79 14.21 2 12 2C9.79 2 8 3.79 8 6H6C4.9 6 4 6.9 4 8V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8C20 6.9 19.1 6 18 6ZM12 4C13.1 4 14 4.9 14 6H10C10 4.9 10.9 4 12 4ZM18 20H6V8H8V10C8 10.55 8.45 11 9 11C9.55 11 10 10.55 10 10V8H14V10C14 10.55 14.45 11 15 11C15.55 11 16 10.55 16 10V8H18V20Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_11">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="menu">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_83_10)">
+                  <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_83_10">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <video autoplay muted loop>
+          <source src="./public/lush_main_video.mp4" type="video/mp4" />
+        </video>
+        <div class="title">
+          <h1>
+            Bathing for health and happiness.<br />
+            Reduce stress, help circulation and<br />
+            improve your sleep.
+          </h1>
+        </div>
+
+        <div class="desc">
+          <span class="text"></span>
+        </div>
+      </div>
+      <section class="product">
+        <div class="section_header">
+          <h3 class="title">product</h3>
+          <div class="btn_more btn">
+            <a href="#">more →</a>
+          </div>
+        </div>
+        <div class="product_slide">
+          <ul>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_1.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img1.png" alt="상품 이미지" />
+                  <p class="product_name">sleepy timmy</p>
+                  <div class="product_text">
+                    <p class="product_category">bubble bar</p>
+                    <p class="product_price">£7.00</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_2.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img2.png" alt="상품 이미지" />
+                  <p class="product_name">karma</p>
+                  <div class="product_text">
+                    <p class="product_category">perfume</p>
+                    <p class="product_price">£30.00</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_3.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img3.png" alt="상품 이미지" />
+                  <p class="product_name">yummy custard</p>
+                  <div class="product_text">
+                    <p class="product_category">body wash</p>
+                    <p class="product_price">£9.00</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_4.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img4.png" alt="상품 이미지" />
+                  <p class="product_name">cherry on top</p>
+                  <div class="product_text">
+                    <p class="product_category">soap</p>
+                    <p class="product_price">£6.00</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_5.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img5.png" alt="상품 이미지" />
+                  <p class="product_name">intergalactic</p>
+                  <div class="product_text">
+                    <p class="product_category">shower gel</p>
+                    <p class="product_price">£6.00</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_6.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img6.png" alt="상품 이미지" />
+                  <p class="product_name">atom heart mother</p>
+                  <div class="product_text">
+                    <p class="product_category">bath bomb</p>
+                    <p class="product_price">£5.50</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_7.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img7.png" alt="상품 이미지" />
+                  <p class="product_name">dream cream self-preserving</p>
+                  <div class="product_text">
+                    <p class="product_category">body lotionb</p>
+                    <p class="product_price">£7.00</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_8.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img8.png" alt="상품 이미지" />
+                  <p class="product_name">sleepy</p>
+                  <div class="product_text">
+                    <p class="product_category">lush melt</p>
+                    <p class="product_price">£8.00</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_9.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img9.png" alt="상품 이미지" />
+                  <p class="product_name">creamy candy</p>
+                  <div class="product_text">
+                    <p class="product_category">body scrum</p>
+                    <p class="product_price">£10.00</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="slide_item" tabindex="0">
+              <div class="img">
+                <img src="./public/slide_10.jpg" alt="상품 이미지" />
+              </div>
+              <div class="product_desc">
+                <div class="desc_inner">
+                  <img src="./public/product_img10.png" alt="상품 이미지" />
+                  <p class="product_name">intergalactic</p>
+                  <div class="product_text">
+                    <p class="product_category">bath bomb</p>
+                    <p class="product_price">£6.00</p>
+                  </div>
+                  <div class="btn-view btn"><a href="#">View</a></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="category">
+        <div class="box" tabindex="0">
+          <div class="box_img">
+            <img src="./public/banner_1.jpg" alt="배너 이미지" />
+            <div class="box_title">Shaun The<br />Sheep x Lush</div>
+            <div class="box_desc">
+              <div class="box_inner">
+                <span class="box_text">
+                  Together with Aardman, we’re serving up handmade fun at the farm with six fresh, carefully crafted and
+                  totally vegan products.<br />
+                  Whether it’s an unbleatable bubble bar you’ll or a Bitzer-themed body balm, this is a range you’ll
+                  want to (pitch)fork out for.
+                </span>
+                <div class="btn-view btn"><a href="#">View</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" tabindex="0">
+          <div class="box_img">
+            <img src="./public/banner_2.jpg" alt="배너 이미지" />
+            <div class="box_title">Fragrances</div>
+            <div class="box_desc">
+              <div class="box_inner">
+                <span class="box_text">
+                  Spruce up your shower routine with our amazing range of products.<br />
+                  Leave the bathroom feeling rejuvenated and refreshed.
+                </span>
+                <div class="btn-view btn"><a href="#">View</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" tabindex="0">
+          <div class="box_img">
+            <img src="./public/banner_3.jpg" alt="배너 이미지" />
+            <div class="box_title">Shower Products</div>
+            <div class="box_desc">
+              <div class="box_inner">
+                <span class="box_text">
+                  Whatever you're looking for, we've got a range of unisex fragrances to uplift, inspire, and delight
+                  using ethically sourced essential oils.<br />
+                  Whether it's for a friend, a personal treat or fragrancing your home with scented candles, you can
+                  find our range of tantalising perfume perfect for all.
+                </span>
+                <div class="btn-view btn"><a href="#">View</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" tabindex="0">
+          <div class="box_img">
+            <img src="./public/banner_4.jpg" alt="배너 이미지" />
+            <div class="box_title">Life style</div>
+            <div class="box_desc">
+              <div class="box_inner">
+                <span class="box_text">
+                  Experience LUSH beyond the bath and live the lifestyle with our ever expanding range of apparel,
+                  organisers, books, music and more.<br />
+                  Our eco lifestyle range can also make great presents for those eco-conscious friends and family or
+                  even just for yourself.
+                </span>
+                <div class="btn-view btn"><a href="#">View</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box" tabindex="0">
+          <div class="box_img">
+            <img src="./public/banner_5.jpg" alt="배너 이미지" />
+            <div class="box_title">gifts</div>
+            <div class="box_desc">
+              <div class="box_inner">
+                <span class="box_text">
+                  Guaranteed to satisfy more than mere material goods can.<br />
+                  Our large collection of gifts inspires every reason to celebrate. Each gift box comes with an array of
+                  fragrant products so give the perfect present and unique gift, whatever the occasion.
+                </span>
+                <div class="btn-view btn"><a href="#">View</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscriptions">
+        <div class="section_header">
+          <h3 class="title">subscriptions</h3>
+          <div class="btn_more btn">
+            <a href="#">more →</a>
+          </div>
+        </div>
+        <div class="subscriptions_inner">
+          <div class="video">
+            <video autoplay loop muted>
+              <source src="./public/subscriptions_video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="subscriptions_right">
+            <div class="subscriptions_desc">
+              We're simply besotted with freshness! Using fresh ingredients has been in our DNA since our inventors
+              began creating products. Almost every day, Lush factories receive deliveries of fruit and vegetables. And
+              we want to bring our freshest and most ethical cosmetics straight to your doorstep with the
+              <span>Exclusive Lush Kitchen subscription boxes.</span> Every month you'll receive new full-sized vegan
+              cosmetics that you can’t get anywhere else, all blended and crafted in our kitchens and sent straight to
+              you.
+            </div>
+            <div class="subscriptions_img">
+              <img src="./public/subscriptions_imgjpg.jpg" alt="광고 이미지" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="value">
+        <ul>
+          <li class="value_item" tabindex="0">
+            <a href="#">
+              <img src="./public/value_01.png" alt="naked products" />
+            </a>
+            <div class="value_img">
+              <img src="./public/value_img_1.jpg" alt="At Lush we believe you should get what you pay for" />
+            </div>
+          </li>
+          <li class="value_item" tabindex="0">
+            <a href="#">
+              <img src="./public/value_02.png" alt="fighting animal testing" />
+            </a>
+            <div class="value_img">
+              <img
+                src="./public/value_img_2.jpg"
+                alt="Fighting a life-long campaign against the use of animals in testing"
+              />
+            </div>
+          </li>
+          <li class="value_item" tabindex="0">
+            <a href="#">
+              <img src="./public/value_03.png" alt="fresh consmetics" />
+            </a>
+            <div class="value_img">
+              <img src="./public/value_img_3.jpg" alt="We Believe – our guiding statement for over 25 years" />
+            </div>
+          </li>
+          <li class="value_item" tabindex="0">
+            <a href="#">
+              <img src="./public/value_04.png" alt="100% vegetarian" />
+            </a>
+            <div class="value_img">
+              <img
+                src="./public/value_img_4.jpg"
+                alt="Proudly creating vegetarian products for 25 years and counting…"
+              />
+            </div>
+          </li>
+          <li class="value_item" tabindex="0">
+            <a href="#">
+              <img src="./public/value_05.png" alt="ethical buying" />
+            </a>
+            <div class="value_img">
+              <img src="./public/value_img_5.jpg" alt="From source to skin and beyond: Our stance on ethical buying" />
+            </div>
+          </li>
+          <li class="value_item" tabindex="0">
+            <a href="#">
+              <img src="./public/value_06.png" alt="handmade with love" />
+            </a>
+            <div class="value_img">
+              <img src="./public/value_img_6.jpg" alt="All of our products are made by hand, fresh, every day…" />
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <div class="service_inner">
+          <h3>Customer Service</h3>
+          <ul>
+            <li class="service_item"><a href="#">Delivery Information</a></li>
+            <li class="service_item"><a href="#">Returns and Refunds</a></li>
+            <li class="service_item"><a href="#">Privacy Notice</a></li>
+            <li class="service_item"><a href="#">Contact Us</a></li>
+            <li class="service_item"><a href="#">FAQs</a></li>
+            <li class="service_item"><a href="#">Cookie Policy</a></li>
+            <li class="service_item"><a href="#">Gift Cards</a></li>
+            <li class="service_item"><a href="#">Terms & Conditions</a></li>
+            <li class="service_item"><a href="#">Klarna FAQs</a></li>
+            <li class="service_item"><a href="#">Shop Finder</a></li>
+            <li class="service_item"><a href="#">Cookie Preferences </a></li>
+          </ul>
+        </div>
+        <div class="copylight">
+          <div class="language_inner">
+            <span class="country">United Kingdom</span>
+            <span class="language">English</span>
+            <span class="money">£</span>
+          </div>
+          <span>Copyright © 1995-2025 Lush Retail Ltd.</span>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
