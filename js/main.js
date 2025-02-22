@@ -1,6 +1,6 @@
-import gsap from 'gsap';
-import TextPlugin from 'gsap/TextPlugin';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import gsap from './node_modules/gsap/index.js';
+import TextPlugin from './node_modules/gsap/TextPlugin.js';
+import { ScrollTrigger } from './node_modules/gsap/ScrollTrigger.js';
 
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
