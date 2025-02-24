@@ -3,11 +3,6 @@ $color: #fff;
 $hover-bg: rgba(0, 0, 0, 0.8);
 @mixin responsive($screen) {
   @if ($screen == 'Mo-M') {
-    @media screen and (max-width: 320px) {
-      @content;
-    }
-  }
-  @if ($screen == 'Mo-M') {
     @media screen and (max-width: 375px) {
       @content;
     }
