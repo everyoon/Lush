@@ -493,7 +493,10 @@ $hover-bg: rgba(0, 0, 0, 0.8);
     position: relative;
     background-color: $bg;
     padding: 30px;
-    height: 500px;
+    height: 600px;
+    @include responsive(Laptop-L) {
+      height: 420px;
+    }
     @include responsive(Tab) {
       height: 380px;
     }
@@ -627,7 +630,7 @@ $hover-bg: rgba(0, 0, 0, 0.8);
       justify-content: space-between;
       align-items: center;
       font-size: 14px;
-      @include responsive(Laptop) {
+      @include responsive(Laptop-L) {
         font-size: 12px;
       }
       @include responsive(Mo-L) {
